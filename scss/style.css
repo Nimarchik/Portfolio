@@ -328,9 +328,11 @@ body {
   line-height: 1.5;
   background-color: #0A0A0A;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -378,8 +380,26 @@ body {
 }
 
 .nav__list-link {
+  position: relative;
   font-family: "Inter", sans-serif;
   font-size: 16px;
+}
+.nav__list-link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background: #D3E97A;
+  filter: drop-shadow(0 3px 5px #D3E97A);
+  border-radius: 2px;
+  transition: all 0.4s;
+}
+.nav__list-link:hover::before {
+  width: 100%;
+  left: 0;
+  transition: all 0.4s;
 }
 
 .top {
