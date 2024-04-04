@@ -91,7 +91,7 @@ body {
 		width: 0;
 		height: 3px;
 		background: $color;
-		filter: drop-shadow(0 3px 5px $color);
+		filter: drop-shadow(0 5px 5px $color);
 		border-radius: 2px;
 		transition: all 0.4s;
 	}
@@ -343,4 +343,118 @@ body {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.nav__menu-btn{
+	display: none;
+}
+
+@media screen and (max-width: 360px) {
+	.container {
+		width: 90%;
+	}
+	.nav__menu-btn {
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		gap: 12px;
+		width: 44px;
+		position: relative;
+		background-color: transparent;
+		border: none;
+		z-index: 3;
+	}
+	.nav__menu-btn--active {
+		transition: all 0.4s;
+	}
+	.nav__menu-btn--active .nav__menu-span {
+		width: 35px;
+		transform: rotate(180deg);
+		transition: all 0.4s;
+
+		&:nth-child(1) {
+			transform: rotate(56deg) translateX(9px);
+			transition: all 0.4s;
+		}
+		&:nth-child(2) {
+			transform: rotate(302deg) translateX(8px);
+			transition: all 0.4s;
+		}
+	}
+
+	.nav__menu-span {
+		display: block;
+		width: 100%;
+		background: $color-text;
+		height: 2px;
+		// margin-bottom: 10px;
+		transition: all 0.4s;
+	}
+	.nav__menu-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: translateY(-100%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background: $color-bg;
+		transition: all 0.4s;
+	}
+
+	.nav__menu-content--show {
+		transform: translateY(0);
+		transition: all 0.4s;
+	}
+
+	.nav__list {
+		flex-direction: column;
+	}
+	.top {
+		padding: 0 0 64px;
+	}
+	.top__content {
+		flex-direction: column;
+	}
+	.top__content-group {
+		width: 100%;
+		margin-bottom: 64px;
+	}
+	.top__content-img {
+		width: 100%;
+	}
+
+	.project__descript {
+		width: 100%;
+	}
+
+	.project__card {
+		flex-direction: column;
+		width: 100%;
+	}
+	.project__card-block {
+		height: 343px;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.project__card-img {
+		width: 80%;
+		height: 179px;
+	}
+	.project__card-content {
+		width: 100%;
+	}
+	.about__group {
+		flex-direction: column;
+	}
+	.about__title {
+		margin-bottom: 40px;
+	}
+	.abou__content {
+		width: 100%;
+	}
 }

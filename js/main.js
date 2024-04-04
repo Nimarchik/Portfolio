@@ -27,7 +27,7 @@ let products = [
 		urlGit: 'https://github.com/Nimarchik/game-sites.githab.io',
 	},
 	{
-		name: 'Сайт LeasCar я сделал, чтобы попрактиковаться в создании сайтов.',
+		name: 'I created this site called LeasCar to practice building websites.',
 		descriptions:
 			'The site is made for practice in creating websites, there is adaptation for cell phones. ',
 		year: '2023',
@@ -111,4 +111,22 @@ products.map(function (item) {
 								</div>
 							</div>
     `
+})
+
+const btnMenu = document.querySelector('.nav__menu-btn'),
+	menuContent = document.querySelector('.nav__menu-content')
+
+btnMenu.addEventListener('click', () => {
+	btnMenu.classList.toggle('nav__menu-btn--active')
+
+	menuContent.classList.toggle('nav__menu-content--show')
+})
+
+let navList = document.querySelectorAll('.nav__list-item')
+
+navList.forEach(function (item) {
+	item.addEventListener('click', () => {
+		menuContent.classList.remove('nav__menu-content--show')
+		btnMenu.classList.remove('nav__menu-btn--active')
+	})
 })
