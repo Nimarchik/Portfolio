@@ -624,7 +624,8 @@ body {
   transition: all 0.5s ease-in;
 }
 
-.about__title {
+.about__title,
+.aboutMe__title {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: clamp(3.5625rem, 1.6633rem + 6.0773vw, 6.3125rem);
@@ -636,23 +637,23 @@ body {
   border-bottom: 1px solid #484848;
 }
 
-.about__group {
+.about__group, .aboutMe__inner, .expirience__inner {
   display: flex;
   justify-content: space-between;
 }
 
-.abou__content {
+.abou__content, .aboutMe__content {
   width: 704px;
 }
 
-.about__content-title {
+.about__content-title, .aboutMe__content-title {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: clamp(1.5rem, 1.1528rem + 1.1111vw, 1.78rem);
   margin-bottom: 16px;
 }
 
-.about__content-descript {
+.about__content-descript, .aboutMe__content-text {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: clamp(1rem, 0.9132rem + 0.2778vw, 1rem);
@@ -774,4 +775,119 @@ body {
   .abou__content {
     width: 100%;
   }
+}
+.aboutMe {
+  padding: 160px 0 80px;
+  border-bottom: 1px solid #484848;
+}
+
+.aboutMe__content-link {
+  width: 215px;
+}
+
+.aboutMe__content-links {
+  margin-bottom: 120px;
+}
+
+.photo__img {
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.aboutMe__capabilities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutMe__capabilities-title {
+  font-size: 76px;
+}
+
+.aboutMe__capabilities-content,
+.expirience__content {
+  width: 600px;
+}
+
+.aboutMe__capabilities-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9132rem + 0.2778vw, 1rem);
+  color: #C7C7C7;
+  margin-bottom: 32px;
+}
+
+.aboutMe__capabilities-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.aboutMe__capabilities-item {
+  padding: 20px 40px;
+  border: 1px solid #484848;
+  border: 2px solid #484848;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+.aboutMe__capabilities-item:hover:nth-child(1) {
+  border-color: orange;
+  filter: drop-shadow(0 0 5px orange);
+  transition: all 0.2s;
+}
+.aboutMe__capabilities-item:hover:nth-child(2) {
+  border-color: blue;
+  filter: drop-shadow(0 0 5px blue);
+  transition: all 0.2s;
+}
+.aboutMe__capabilities-item:hover:nth-child(3) {
+  border-color: orangered;
+  filter: drop-shadow(0 0 5px orangered);
+  transition: all 0.2s;
+}
+.aboutMe__capabilities-item:hover:nth-child(4) {
+  border-color: deeppink;
+  filter: drop-shadow(0 0 5px deeppink);
+  transition: all 0.2s;
+}
+.aboutMe__capabilities-item:hover:nth-child(5) {
+  border-color: red orange violet blue;
+  filter: drop-shadow(0 0 5px #fff);
+  transition: all 0.2s;
+}
+
+.expirience {
+  padding: 81px 0 72px;
+  border-bottom: 1px solid #484848;
+}
+
+.expirience__content-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9132rem + 0.2778vw, 1rem);
+  color: #C7C7C7;
+}
+
+.expirience__content-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.expirience__content-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.expirience__content-text {
+  font-size: 18px;
+}
+
+.expirience__content-des {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9132rem + 0.2778vw, 1rem);
+  color: #C7C7C7;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

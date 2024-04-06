@@ -1,0 +1,101 @@
+.aboutMe {
+	padding: 160px 0 80px;
+	border-bottom: $border-section;
+}
+
+.aboutMe__content-link {
+	width: 215px;
+}
+
+.aboutMe__content-links {
+	margin-bottom: 120px;
+}
+
+.photo__img {
+	border-radius: 15px;
+	margin-bottom: 40px;
+}
+.aboutMe__capabilities {
+	display: flex;
+	justify-content: space-between;
+}
+.aboutMe__capabilities-title {
+	font-size: 76px;
+}
+.aboutMe__capabilities-content,
+.expirience__content {
+	width: 600px;
+}
+
+.aboutMe__capabilities-text {
+	@include style-p();
+	margin-bottom: 32px;
+}
+
+.aboutMe__capabilities-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 16px;
+}
+
+.aboutMe__capabilities-item {
+	padding: 20px 40px;
+	border: $border-section;
+	border: 2px solid #484848;
+	border-radius: 100px;
+	transition: all 0.2s;
+
+	&:hover {
+		&:nth-child(1) {
+			border-color: orange;
+			filter: drop-shadow(0 0 5px orange);
+			transition: all 0.2s;
+		}
+		&:nth-child(2) {
+			border-color: blue;
+			filter: drop-shadow(0 0 5px blue);
+			transition: all 0.2s;
+		}
+		&:nth-child(3) {
+			border-color: orangered;
+			filter: drop-shadow(0 0 5px orangered);
+			transition: all 0.2s;
+		}
+		&:nth-child(4) {
+			border-color: deeppink;
+			filter: drop-shadow(0 0 5px deeppink);
+			transition: all 0.2s;
+		}
+		&:nth-child(5) {
+			border-color: red orange violet blue;
+			filter: drop-shadow(0 0 5px #fff);
+			transition: all 0.2s;
+		}
+	}
+}
+
+.expirience {
+	padding: 81px 0 72px;
+	border-bottom: $border-section;
+}
+.expirience__content-text {
+	@include style-p();
+}
+.expirience__content-date {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+.expirience__content-title {
+	font-size: 24px;
+	font-weight: 500;
+}
+.expirience__content-text {
+	font-size: 18px;
+}
+.expirience__content-des {
+	@include style-p();
+	font-size: 18px;
+}

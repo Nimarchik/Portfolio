@@ -309,7 +309,8 @@ body {
 	transition: all 0.5s ease-in;
 }
 
-.about__title {
+.about__title,
+.aboutMe__title {
 	@include style-title-sections();
 }
 
@@ -318,20 +319,20 @@ body {
 	border-bottom: $border-section;
 }
 
-.about__group {
+.about__group, .aboutMe__inner, .expirience__inner {
 	display: flex;
 	justify-content: space-between;
 }
 
-.abou__content {
+.abou__content, .aboutMe__content {
 	width: 704px;
 }
 
-.about__content-title {
+.about__content-title, .aboutMe__content-title {
 	@include style-title();
 	margin-bottom: 16px;
 }
-.about__content-descript {
+.about__content-descript, .aboutMe__content-text {
 	@include style-p();
 	margin-bottom: 53px;
 }
@@ -345,7 +346,7 @@ body {
 	text-transform: uppercase;
 }
 
-.nav__menu-btn{
+.nav__menu-btn {
 	display: none;
 }
 
