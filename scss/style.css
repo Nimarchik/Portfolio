@@ -574,7 +574,8 @@ body {
   border-bottom: 1px solid #484848;
 }
 
-.project__card-link {
+.project__card-link,
+.politics {
   position: relative;
   display: flex;
   align-items: center;
@@ -588,7 +589,8 @@ body {
   z-index: 1;
   transition: all 0.4s ease-out;
 }
-.project__card-link::after {
+.project__card-link::after,
+.politics::after {
   position: absolute;
   bottom: 0;
   content: "";
@@ -598,7 +600,8 @@ body {
   z-index: -1;
   transition: all 0.4s ease-out;
 }
-.project__card-link::before {
+.project__card-link::before,
+.politics::before {
   position: absolute;
   content: "";
   bottom: -5px;
@@ -606,15 +609,18 @@ body {
   height: 2px;
   background: #D3E97A;
 }
-.project__card-link:hover {
+.project__card-link:hover,
+.politics:hover {
   color: #000;
   transition: all 0.4s ease-out;
 }
-.project__card-link:hover .project__card-link-svg {
+.project__card-link:hover .project__card-link-svg,
+.politics:hover .project__card-link-svg {
   fill: #000;
   transition: all 0.4s ease-in-out;
 }
-.project__card-link:hover::after {
+.project__card-link:hover::after,
+.politics:hover::after {
   height: 100%;
   transition: all 0.4s ease-out;
 }
@@ -637,23 +643,28 @@ body {
   border-bottom: 1px solid #484848;
 }
 
-.about__group, .aboutMe__inner, .expirience__inner {
+.about__group,
+.aboutMe__inner,
+.expirience__inner {
   display: flex;
   justify-content: space-between;
 }
 
-.abou__content, .aboutMe__content {
+.abou__content,
+.aboutMe__content {
   width: 704px;
 }
 
-.about__content-title, .aboutMe__content-title {
+.about__content-title,
+.aboutMe__content-title {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: clamp(1.5rem, 1.1528rem + 1.1111vw, 1.78rem);
   margin-bottom: 16px;
 }
 
-.about__content-descript, .aboutMe__content-text {
+.about__content-descript,
+.aboutMe__content-text {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: clamp(1rem, 0.9132rem + 0.2778vw, 1rem);
@@ -776,6 +787,13 @@ body {
     width: 100%;
   }
 }
+.politics {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  font-size: 16px;
+}
+
 .aboutMe {
   padding: 160px 0 80px;
   border-bottom: 1px solid #484848;
@@ -890,4 +908,29 @@ body {
   font-size: clamp(1rem, 0.9132rem + 0.2778vw, 1rem);
   color: #C7C7C7;
   font-size: 18px;
+}
+
+.politic_top {
+  margin-bottom: 50px;
+}
+
+.name-title {
+  font-family: "Roboto", sans-serif;
+}
+
+.title-yak,
+.title_use-inst,
+.title_public-info,
+.title-yak-politics {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.title-yak-politics {
+  font-size: 30px;
+}
+
+.text {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

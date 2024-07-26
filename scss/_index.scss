@@ -256,7 +256,8 @@ body {
 	border-bottom: $border-section;
 }
 
-.project__card-link {
+.project__card-link,
+.politics {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -319,20 +320,25 @@ body {
 	border-bottom: $border-section;
 }
 
-.about__group, .aboutMe__inner, .expirience__inner {
+.about__group,
+.aboutMe__inner,
+.expirience__inner {
 	display: flex;
 	justify-content: space-between;
 }
 
-.abou__content, .aboutMe__content {
+.abou__content,
+.aboutMe__content {
 	width: 704px;
 }
 
-.about__content-title, .aboutMe__content-title {
+.about__content-title,
+.aboutMe__content-title {
 	@include style-title();
 	margin-bottom: 16px;
 }
-.about__content-descript, .aboutMe__content-text {
+.about__content-descript,
+.aboutMe__content-text {
 	@include style-p();
 	margin-bottom: 53px;
 }
@@ -458,4 +464,11 @@ body {
 	.abou__content {
 		width: 100%;
 	}
+}
+
+.politics {
+	display: flex;
+	justify-content: center;
+	width: 250px;
+	font-size: 16px;
 }
