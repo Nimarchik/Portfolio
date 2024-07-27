@@ -69,7 +69,7 @@ products.map(function (item) {
 											<p class="project__card-list-text">Front-end Developer</p>
 										</li>
 										<li class="project__card-item">
-											<h4 class="project__card-list-title">price</h4>
+											<h4 class="project__card-list-title">Price</h4>
 											<p class="project__card-list-text">${item.price}</p>
 										</li>
 									</ul>
