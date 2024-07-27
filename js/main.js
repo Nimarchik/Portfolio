@@ -4,6 +4,7 @@ let products = [
 		descriptions:
 			'The site was created by me for coursework at the university, a site about selling clothes. There is adaptation for mobile devices.',
 		year: '2023',
+		price: '100 $',
 		url: 'img/yanki.png',
 		urlDemo: 'https://nimarchik.github.io/yanki.github.io/',
 		urlGit: 'https://github.com/Nimarchik/yanki.github.io',
@@ -11,8 +12,9 @@ let products = [
 	{
 		name: 'Avion online furniture store',
 		descriptions:
-			'The site was created to get a hand in layout. Template found on the Internet, there is adaptation for cell phones. ',
+			'The site was created to get a hand in layout. Template found on the Internet, there is adaptation for cell phones. Contact for purchase can be made in the footer of the site. ',
 		year: '2024',
+		price: '100 $',
 		url: 'img/avion.png',
 		urlDemo: 'https://nimarchik.github.io/xwear/',
 		urlGit: 'https://github.com/Nimarchik/xwear',
@@ -20,8 +22,9 @@ let products = [
 	{
 		name: 'Web site for the presentation of the game SOS',
 		descriptions:
-			'The site was created to get a hand in layout. Template found on the Internet, there is adaptation for cell phones. ',
+			'The site was created to get a hand in layout. Template found on the Internet, there is adaptation for cell phones. Contact for purchase can be made in the footer of the site.',
 		year: '2023',
+		price: '100 $',
 		url: 'img/sos.png',
 		urlDemo: 'https://nimarchik.github.io/game-sites.githab.io/',
 		urlGit: 'https://github.com/Nimarchik/game-sites.githab.io',
@@ -29,8 +32,9 @@ let products = [
 	{
 		name: 'I created this site called LeasCar to practice building websites.',
 		descriptions:
-			'The site is made for practice in creating websites, there is adaptation for cell phones. ',
+			'The site is made for practice in creating websites, there is adaptation for cell phones. Contact for purchase can be made in the footer of the site.',
 		year: '2023',
+		price: '100 $',
 		url: 'img/leas.png',
 		urlDemo: 'https://nimarchik.github.io/leaseCar.githab.io/',
 		urlGit: 'https://github.com/Nimarchik/leaseCar.githab.io',
@@ -63,6 +67,10 @@ products.map(function (item) {
 										<li class="project__card-item">
 											<h4 class="project__card-list-title">Role</h4>
 											<p class="project__card-list-text">Front-end Developer</p>
+										</li>
+										<li class="project__card-item">
+											<h4 class="project__card-list-title">price</h4>
+											<p class="project__card-list-text">${item.price}</p>
 										</li>
 									</ul>
 									<div class="project__card-links">
@@ -130,3 +138,4 @@ navList.forEach(function (item) {
 		btnMenu.classList.remove('nav__menu-btn--active')
 	})
 })
+

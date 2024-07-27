@@ -355,8 +355,9 @@ body {
 }
 
 .footer {
-  height: 50px;
+  height: 200px;
   background-color: #000;
+  padding: 50px 0;
 }
 
 .header {
@@ -794,6 +795,53 @@ body {
   font-size: 16px;
 }
 
+.footer_logo {
+  font-size: 55px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top__btn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 50px;
+  right: 70px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #1A1A1A;
+  transition: all 0.4s;
+}
+
+.svg__btn-up {
+  width: 30px;
+  height: 30px;
+  transition: all 0.4s;
+  fill: #D3E97A;
+  filter: drop-shadow(0 0 10px #D3E97A);
+  transition: all 0.5s;
+}
+
+.top_hide,
+.svg__btn-up-hide {
+  display: flex;
+  width: 0;
+  height: 0;
+  transition: all 0.5s;
+}
+
 .aboutMe {
   padding: 160px 0 80px;
   border-bottom: 1px solid #484848;
@@ -910,6 +958,37 @@ body {
   font-size: 18px;
 }
 
+.top__btn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 50px;
+  right: 70px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #1A1A1A;
+  transition: all 0.4s;
+}
+
+.svg__btn-up {
+  width: 30px;
+  height: 30px;
+  transition: all 0.4s;
+  fill: #D3E97A;
+  filter: drop-shadow(0 0 10px #D3E97A);
+  transition: all 0.5s;
+}
+
+.top_hide,
+.svg__btn-up-hide {
+  display: flex;
+  width: 0;
+  height: 0;
+  transition: all 0.5s;
+}
+
 .politic_top {
   margin-bottom: 50px;
 }
@@ -933,4 +1012,35 @@ body {
 
 .text {
   margin-bottom: 20px;
+}
+
+.top__btn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 50px;
+  right: 70px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #1A1A1A;
+  transition: all 0.4s;
+}
+
+.svg__btn-up {
+  width: 30px;
+  height: 30px;
+  transition: all 0.4s;
+  fill: #D3E97A;
+  filter: drop-shadow(0 0 10px #D3E97A);
+  transition: all 0.5s;
+}
+
+.top_hide,
+.svg__btn-up-hide {
+  display: flex;
+  width: 0;
+  height: 0;
+  transition: all 0.5s;
 }/*# sourceMappingURL=style.css.map */
