@@ -72,6 +72,12 @@ body {
 .nav__logo {
 	font-family: $font-Bebas;
 	font-size: 32px;
+	transition: all .4s;
+
+	&:hover {
+		filter: drop-shadow(0 3px 5px $color-text);
+		transition: all .4s;
+	}
 }
 
 .nav__list {
@@ -520,4 +526,9 @@ body {
 	height: 0;
 	// bottom: -100%;
 	transition: all 0.5s;
+}
+
+.footer__content-link {
+	display: flex;
+	gap: 10px;
 }
