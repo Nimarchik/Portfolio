@@ -4,40 +4,44 @@ let products = [
 		descriptions:
 			'The site was created by me for coursework at the university, a site about selling clothes. There is adaptation for mobile devices.',
 		year: '2023',
-		price: '100 $',
+		price: '60$',
 		url: 'img/yanki.png',
 		urlDemo: 'https://nimarchik.github.io/yanki.github.io/',
 		urlGit: 'https://github.com/Nimarchik/yanki.github.io',
+		urlPrice: ''
 	},
 	{
 		name: 'Avion online furniture store',
 		descriptions:
 			'The site was created to get a hand in layout. Template found on the Internet, there is adaptation for cell phones. Contact for purchase can be made in the footer of the site. ',
 		year: '2024',
-		price: '100 $',
+		price: '120 $',
 		url: 'img/avion.png',
 		urlDemo: 'https://nimarchik.github.io/xwear/',
 		urlGit: 'https://github.com/Nimarchik/xwear',
+		urlPrice: ''
 	},
 	{
 		name: 'Web site for the presentation of the game SOS',
 		descriptions:
 			'The site was created to get a hand in layout. Template found on the Internet, there is adaptation for cell phones. Contact for purchase can be made in the footer of the site.',
 		year: '2023',
-		price: '100 $',
+		price: '50$',
 		url: 'img/sos.png',
 		urlDemo: 'https://nimarchik.github.io/game-sites.githab.io/',
 		urlGit: 'https://github.com/Nimarchik/game-sites.githab.io',
+		urlPrice: ''
 	},
 	{
 		name: 'I created this site called LeasCar to practice building websites.',
 		descriptions:
 			'The site is made for practice in creating websites, there is adaptation for cell phones. Contact for purchase can be made in the footer of the site.',
 		year: '2023',
-		price: '100 $',
+		price: '150$',
 		url: 'img/leas.png',
 		urlDemo: 'https://nimarchik.github.io/leaseCar.githab.io/',
 		urlGit: 'https://github.com/Nimarchik/leaseCar.githab.io',
+		urlPrice: ''
 	},
 ]
 
@@ -112,6 +116,29 @@ products.map(function (item) {
 													clip-rule="evenodd"
 													d="M11.0282 0.166748C5.06011 0.166748 0.223022 5.00383 0.223022 10.9719C0.223022 15.7451 3.31811 19.7957 7.61244 21.2257C8.15302 21.3232 8.34802 20.9906 8.34802 20.7046C8.34802 20.4478 8.33936 19.7675 8.33611 18.8673C5.32986 19.5194 4.69502 17.4178 4.69502 17.4178C4.20536 16.1698 3.49577 15.8372 3.49577 15.8372C2.51536 15.1666 3.57052 15.1818 3.57052 15.1818C4.65602 15.2576 5.22477 16.2954 5.22477 16.2954C6.18894 17.9464 7.75544 17.4698 8.36861 17.1935C8.46719 16.4948 8.74886 16.0181 9.05652 15.7483C6.65802 15.4764 4.13602 14.5491 4.13602 10.4075C4.13602 9.22992 4.55744 8.26358 5.24536 7.50958C5.13594 7.2355 4.76219 6.13592 5.35261 4.64958C5.35261 4.64958 6.25936 4.35817 8.32311 5.75567C9.2045 5.51589 10.1137 5.3935 11.0271 5.39167C11.9406 5.39315 12.8498 5.51554 13.7311 5.75567C15.7959 4.35708 16.7016 4.64958 16.7016 4.64958C17.292 6.13592 16.9215 7.2355 16.8089 7.50958C17.5022 8.26358 17.9182 9.22883 17.9182 10.4075C17.9182 14.5599 15.394 15.4721 12.9869 15.7397C13.3714 16.0733 13.7181 16.732 13.7181 17.7395C13.7181 19.1847 13.7051 20.3503 13.7051 20.7046C13.7051 20.9938 13.8979 21.3297 14.4494 21.2235C18.7415 19.7913 21.8334 15.744 21.8334 10.9719C21.8334 5.00383 16.9963 0.166748 11.0282 0.166748Z"
 													fill="inherit"
+												/>
+											</svg>
+										</a>
+
+										<a href="" class="project__card-link project__card-link-buy"
+											>Buy
+											<svg
+												class="project__card-link-svg"
+												xmlns="http://www.w3.org/2000/svg"
+												width="16"
+												height="16"
+												fill="currentColor"
+												class="bi bi-coin"
+												viewBox="0 0 16 16"
+											>
+												<path
+													d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z"
+												/>
+												<path
+													d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+												/>
+												<path
+													d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12"
 												/>
 											</svg>
 										</a>

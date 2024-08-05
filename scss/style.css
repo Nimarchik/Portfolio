@@ -636,6 +636,12 @@ body {
   transition: all 0.5s ease-in;
 }
 
+.project__card-link-buy {
+  display: flex;
+  justify-content: center;
+  padding: 0 5px;
+}
+
 .about__title,
 .aboutMe__title {
   font-family: "Bebas Neue", sans-serif;
@@ -850,6 +856,22 @@ body {
 .footer__content-link {
   display: flex;
   gap: 10px;
+}
+
+.actives {
+  position: relative;
+}
+.actives::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background: #D3E97A;
+  filter: drop-shadow(0 5px 5px #D3E97A);
+  border-radius: 2px;
+  transition: all 0.4s;
 }
 
 .aboutMe {

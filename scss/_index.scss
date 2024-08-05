@@ -72,11 +72,11 @@ body {
 .nav__logo {
 	font-family: $font-Bebas;
 	font-size: 32px;
-	transition: all .4s;
+	transition: all 0.4s;
 
 	&:hover {
 		filter: drop-shadow(0 3px 5px $color-text);
-		transition: all .4s;
+		transition: all 0.4s;
 	}
 }
 
@@ -317,6 +317,12 @@ body {
 	transition: all 0.5s ease-in;
 }
 
+.project__card-link-buy {
+	display: flex;
+	justify-content: center;
+	padding: 0 5px;
+}
+
 .about__title,
 .aboutMe__title {
 	@include style-title-sections();
@@ -531,4 +537,20 @@ body {
 .footer__content-link {
 	display: flex;
 	gap: 10px;
+}
+
+.actives{
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: -3px;
+		width: 100%;
+		height: 3px;
+		background: $color;
+		filter: drop-shadow(0 5px 5px $color);
+		border-radius: 2px;
+		transition: all 0.4s;
+	}
 }
